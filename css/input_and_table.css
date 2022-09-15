@@ -29,6 +29,7 @@ main section correctly*/
 }
 /*styling the table container*/
 #main-section .table-container{
+    font-family: 'Share Tech Mono', monospace;
     background-color: #263531;
     border-radius: 5px;
     height: 40vh;
@@ -38,6 +39,7 @@ main section correctly*/
 /*setting the table background
 and positioning its children*/
 #main-section>.container{
+    font-family: 'Share Tech Mono', monospace;
     display: flex;
     flex-flow:column wrap;
     justify-content: space-between;
@@ -50,6 +52,7 @@ and positioning its children*/
 }
 
 #main-section>.container button{
+    font-family: 'Share Tech Mono', monospace;
     margin: 0;
     padding: 3px;
     border: none;

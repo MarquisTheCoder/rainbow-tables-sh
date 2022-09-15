@@ -12,7 +12,22 @@
 
 let fileButton = document.getElementById('generate-hash-button');
 let fileInput = document.getElementById('get-file');
+
+fileInput.addEventListener('change', ()=>{
+     
+     let fr = new FileReader();
+     
+     fr.onload = function(){
+          alert(fr.result);
+     }
+     
+     fr.readAsText(this.file);
+})
+
 fileButton.onclick = function(){
      fileInput.click();
 }
+
+
+let currentFileInput = '';
 
