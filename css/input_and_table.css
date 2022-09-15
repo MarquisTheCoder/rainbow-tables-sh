@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/*displaying and positioning the entire
+main section correctly*/
+#main-section{
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 75vh;
+    background-color: #39353C99;
+
+}
+
+/*adding styling to the input*/
+#main-section #hash-input{
+    font-family: 'Share Tech Mono', monospace;
+
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 30vw;
+    background-color: #222024cc;
+    color: #ffffff99;
+
+}
+/*styling the table container*/
+#main-section .table-container{
+    background-color: #263531;
+    border-radius: 5px;
+    height: 40vh;
+    width: 30vw;
+    box-shadow: 3px 10px 28px 15px rgba(0,0,0,0.1);
+}
+/*setting the table background
+and positioning its children*/
+#main-section>.container{
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px 20px;
+    height: 60vh;
+    width: 40vw;
+    background-color: #43a047aa;
+}
+
+#main-section>.container button{
+    margin: 0;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    color:#ffffff ;
+    background-color: #222024;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- meta tags for data-->
+	<meta charset="UTF-8">
+    <!-- meta tags for responsiveness -->
+	<meta name="viewport" content="initial-scale=1, width=device-width">
+	
+	<title> Rainbow.sh</title>
+	
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/rainbows/favicon.ico">
+	<link rel="stylesheet" href="css/input_and_table.css">
+	
+</head>
+
+<body>
+	
+	<header>
+		
+		<nav>
+			<!-- These sections are being flex grew by a 1:2 ratio-->
+			<section id="logo-title-section">
+				<a href="">
+					<span>
+						<h1 class="hover-letters">
+							<span>R</span><span>a</span><span>i</span><span>n</span><span>b</span><span>o</span><span>w</span><span>.</span><span>s</span><span>h</span>
+						</h1>
+					</span>
+				</a>
+			</section>
+			
+			<section id="navigation">
+				<ul id="navigation-links">
+					<!-- all links for main navigation goes here-->
+					<li><a class="navigation-link" href="">About</a></li>
+					<li><a class="navigation-link" href=""> Contact</a></li>
+					<li><a class="navigation-link" href=""> Hashes</a></li>
+				</ul>
+			</section>
+			
+		</nav>
+	</header>
+	
+	
+	<main id="main-section">
+		
+		<section class="container">
+			<section>
+				<input id="hash-input" type="text" placeholder="enter hash">
+				<button>Crack</button>
+			</section>
+			<section class="table-container">
+			
+			</section>
+			<section>
+				<input  id="get-file" type="file" style="display: none;">
+				<button id="generate-hash-button" name="generate-hash-button">
+					Generate rainbow table from password list
+				</button>
+			</section>
+		
+		</section>
+		
+	</main>
+	<script src="js/app.js"></script>
+</body>
+</html>
