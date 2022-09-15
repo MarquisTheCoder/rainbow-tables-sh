@@ -83,11 +83,12 @@ thead{
 
 thead .table-heading{
     display: flex;
-    padding: 10px 100%;
+    flex-grow: 1;
     justify-content: center;
     align-items: center;
     border: solid black 1px;
     background-color: blue;
+    color: white;
 
 }
 
