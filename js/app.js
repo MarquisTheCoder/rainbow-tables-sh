@@ -13,15 +13,18 @@
 let fileButton = document.getElementById('generate-hash-button');
 let fileInput = document.getElementById('get-file');
 
-fileInput.addEventListener('change', ()=>{
+fileInput.addEventListener('change', (event)=>{
+     const fileList = event.target.files;
      
      let fr = new FileReader();
      
      fr.onload = function(){
-          alert(fr.result);
+          let passwordList = fr.result;
+          passwordList = passwordList.split('\n');
+          alert(passwordList)
      }
      
-     fr.readAsText(this.file);
+     fr.readAsText(fileList[0]);
 })
 
 fileButton.onclick = function(){

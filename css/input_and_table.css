@@ -48,7 +48,7 @@ and positioning its children*/
     padding: 15px 20px;
     height: 60vh;
     width: 40vw;
-    background-color: #43a047aa;
+    background-color: #5474D9aa;
 }
 
 #main-section>.container button{
@@ -59,4 +59,10 @@ and positioning its children*/
     border-radius: 5px;
     color:#ffffff ;
     background-color: #222024;
+}
+
+#main-section>.container button:hover{
+    cursor: grab;
+    background: linear-gradient(to right, #ef5350aa, #7e57c2aa, #26c6daaa, #43a047aa, #eeff41aa, #f9a825aa);
+
 }
