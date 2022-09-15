@@ -21,6 +21,7 @@
 		<nav>
 			<!-- These sections are being flex grew by a 1:2 ratio-->
 			<section id="logo-title-section">
+				
 				<a href="">
 					<span>
 						<h1 class="hover-letters">
@@ -40,19 +41,31 @@
 			</section>
 			
 		</nav>
+		
 	</header>
 	
 	
 	<main id="main-section">
 		
 		<section class="container">
+			
 			<section>
 				<input id="hash-input" type="text" placeholder="enter hash">
 				<button>Crack</button>
 			</section>
-			<section id="table-container" class="table-container">
 			
+			<section id="table-container" class="table-container">
+				<table>
+					<thead >
+						<th class="table-heading">Plaintext</th>
+						<th class="table-heading">Hashes</th>
+					</thead>
+					<tbody>
+					
+					</tbody>
+				</table>
 			</section>
+			
 			<section>
 				<input  id="get-file" type="file" style="display: none;">
 				<button id="generate-hash-button" name="generate-hash-button">
@@ -63,9 +76,12 @@
 		</section>
 		
 	</main>
-	<script src="js/app.js"></script>
 	
+    <!-- linked js -->
+	<script src="js/app.js"></script>
 	<!-- javascript hashing library -->
 	<script src="https://cdn.jsdelivr.net/npm/jshashes@1.0.8/hashes.min.js" integrity="sha256-H7hBuovONQQrY3zESq6MXx+b5Q3ovOY03taLJUaMauk=" crossorigin="anonymous"></script>
+	<!-- javascript sha256 library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js" integrity="sha512-szJ5FSo9hEmXXe7b5AUVtn/WnL8a5VofnFeYC2i2z03uS2LhAch7ewNLbl5flsEmTTimMN0enBZg/3sQ+YOSzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
