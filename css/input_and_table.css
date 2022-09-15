@@ -86,7 +86,6 @@ thead .table-heading{
     flex-grow: 1;
     justify-content: center;
     align-items: center;
-    border: solid black 1px;
     background-color: blue;
     color: white;
 
