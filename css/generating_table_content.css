@@ -20,10 +20,11 @@ table{
     overflow: scroll;
 }
 #hash{
+
     overflow: scroll;
+    font-size: .8em;
     scrollbar-width: none;
     color: #ffffffaa;
-    font-size: .9vw;
 }
 
 .table-container{

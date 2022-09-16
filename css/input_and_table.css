@@ -38,6 +38,7 @@ main section correctly*/
 }
 /*setting the table background
 and positioning its children*/
+
 #main-section>.container{
     font-family: 'Share Tech Mono', monospace;
     display: flex;
@@ -100,5 +101,12 @@ table{
     flex-direction: column;
     color: white;
 
+}
+
+
+@media screen and (max-width: 576px){
+   table{
+       
+   }
 }
 
