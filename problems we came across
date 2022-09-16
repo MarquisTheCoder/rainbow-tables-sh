@@ -1,0 +1,4 @@
+-hashing is computationally expensive so the program crashes with large password list
+-need a way to generate hashes async in a queue
+
+

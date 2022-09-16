@@ -22,6 +22,7 @@ table{
 #hash{
     overflow: scroll;
     scrollbar-width: none;
+    color: #ffffffaa;
     font-size: .9vw;
 }
 
