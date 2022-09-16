@@ -67,26 +67,37 @@ and positioning its children*/
 
 }
 table{
+    table-layout: fixed;
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
 thead{
-
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: red;
+}
+tbody{
+    table-layout: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 
 }
-
 thead .table-heading{
     display: flex;
     flex-grow: 1;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: #39AD79;
+    color: white;
+
+}
+table{
+    display: flex;
+    flex-direction: column;
     color: white;
 
 }

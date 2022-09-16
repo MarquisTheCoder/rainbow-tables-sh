@@ -10,8 +10,13 @@
  *
 */
 
+let hashTable = {
+     
+}
+
 let fileButton = document.getElementById('generate-hash-button');
 let fileInput = document.getElementById('get-file');
+let tbody = document.querySelector('.main-tbody')
 
 fileInput.addEventListener('change', (event)=>{
      const fileList = event.target.files;
@@ -21,7 +26,16 @@ fileInput.addEventListener('change', (event)=>{
      fr.onload = function(){
           let passwordList = fr.result;
           passwordList = passwordList.split('\n');
-          alert(passwordList)
+          passwordList.forEach(password => {
+               tbody.innerHTML += 
+                    "\t\t\t\t\t\t<tr class=\"tbody-row\">\n" +
+                    `\t\t\t\t\t\t\t<td id="password">${password}</td>\n` +
+                    `\t\t\t\t\t\t\t<td id='hash'>${sha256(password)}</td>\n` +
+                    "\t\t\t\t\t\t</tr>\n" 
+                    
+          })
+          
+          
      }
      
      fr.readAsText(fileList[0]);

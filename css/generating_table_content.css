@@ -1,0 +1,30 @@
+.tbody-row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #222024;
+
+}
+.tbody-row td{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    flex-grow:1;
+    background-color: #365B4B;
+    border-bottom: solid black 1px;
+}
+#password{
+    border-right: solid black 1px;
+}
+table{
+    overflow: scroll;
+}
+#hash{
+    overflow: scroll;
+    scrollbar-width: none;
+    font-size: .9vw;
+}
+
+.table-container{
+    overflow-y: scroll;
+}
