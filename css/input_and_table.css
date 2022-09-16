@@ -104,9 +104,33 @@ table{
 }
 
 
+@media screen and (max-width: 768px){
+    #main-section > .container{
+       width: 80vw;
+    }
+    #main-section .table-container{
+        width: 60vw;
+    }
+    #main-section #hash-input{
+        width: 60vw;
+    }
+}
 @media screen and (max-width: 576px){
-   table{
-       
-   }
+    h1{
+        font-size: 1.5em;
+    }
+
+    #main-section > .container{
+        display: flex;
+
+        width: 100vw;
+        height: 100%;
+    }
+    #main-section .table-container{
+        width: 90vw;
+    }
+    #main-section #hash-input{
+        width: 60vw;
+    }
 }
 
