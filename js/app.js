@@ -17,11 +17,21 @@ fileInput.addEventListener('change', (event)=>{
      const fileList = event.target.files;
      
      let fr = new FileReader();
-     
+
+// Take password list put plaintext on one side of the table, and the hash on the other
+     // hash is sha256()
+     //
+
+let tbodyVar = document.getElementsByTagName("tbody");
+
+
+
+
      fr.onload = function(){
           let passwordList = fr.result;
+
           passwordList = passwordList.split('\n');
-          alert(passwordList)
+          alert(passwordList);
      }
      
      fr.readAsText(fileList[0]);
