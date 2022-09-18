@@ -1,0 +1,23 @@
+#main-section>.container button{
+    display: flex;
+    flex-grow: 1;
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    padding: 3px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #e3dfdfcc;
+    background-color: #222024;
+}
+
+#main-section>.container button:hover{
+    cursor: grab;
+    background: #68478A;
+    color: #2B262F;
+}
+
+#main-section>.container #generate-hash-button{
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+}

@@ -20,12 +20,17 @@ main section correctly*/
 
     margin: 0;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
     padding: 5px;
     width: 30vw;
     background-color: #222024cc;
     color: #ffffff99;
 
+}
+#main-section #search-hash{
+    display: flex;
+    width: 30vw;
+    margin-bottom: 2em;
 }
 /*styling the table container*/
 #main-section .table-container{
@@ -43,7 +48,7 @@ and positioning its children*/
     font-family: 'Share Tech Mono', monospace;
     display: flex;
     flex-flow:column wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-radius: 5px;
     padding: 15px 20px;
@@ -52,21 +57,9 @@ and positioning its children*/
     background-color: #5474D9aa;
 }
 
-#main-section>.container button{
-    font-family: 'Share Tech Mono', monospace;
-    margin: 0;
-    padding: 3px;
-    border: none;
-    border-radius: 5px;
-    color:#ffffff ;
-    background-color: #222024;
-}
 
-#main-section>.container button:hover{
-    cursor: grab;
-    background: linear-gradient(to right, #ef5350aa, #7e57c2aa, #26c6daaa, #43a047aa, #eeff41aa, #f9a825aa);
 
-}
+
 table{
     table-layout: fixed;
     display: flex;
@@ -92,29 +85,19 @@ thead .table-heading{
     width: 50%;
     justify-content: center;
     align-items: center;
-    background-color: #39AD79;
-    color: white;
+    background-color: #362F3C;
+
+    color: #714A93,
 
 }
 table{
     display: flex;
     flex-direction: column;
     color: white;
+    scrollbar-width: none;
 
 }
 
-
-@media screen and (max-width: 768px){
-    #main-section > .container{
-       width: 80vw;
-    }
-    #main-section .table-container{
-        width: 60vw;
-    }
-    #main-section #hash-input{
-        width: 60vw;
-    }
-}
 
 @media screen and (max-width: 576px){
 
@@ -133,4 +116,18 @@ table{
         width: 60vw;
     }
 }
+
+@media screen and (max-width: 768px){
+    #main-section > .container{
+       width: 80vw;
+    }
+    #main-section .table-container{
+        width: 60vw;
+    }
+    #main-section #hash-input{
+        width: 60vw;
+    }
+}
+
+
 
