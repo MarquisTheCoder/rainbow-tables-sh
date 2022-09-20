@@ -47,9 +47,13 @@ fileButton.onclick = function(){
      fileInput.click();
 }
 
-document.querySelector('#crack-password-btn').click = function(){
+document.querySelector('#crack-password-btn').onclick = function(){
      let textInput = document.querySelector('#hash-input').value;
-     
+     console.log(textInput)
+     Object.entries(hashTable).forEach( hashMap => {
+          if(textInput == hashMap[1])
+               alert(`Cracked password is: ${hashMap[0]}`)
+     })
 }
 
 let currentFileInput = '';
