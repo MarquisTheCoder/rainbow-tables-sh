@@ -27,10 +27,12 @@ fileInput.addEventListener('change', (event)=>{
           let passwordList = fr.result;
           passwordList = passwordList.split('\n');
           passwordList.forEach(password => {
+               let hash = sha256(password);
+               hashTable[password] = hash;
                tbody.innerHTML += 
                     "\t\t\t\t\t\t<tr class=\"tbody-row\">\n" +
                     `\t\t\t\t\t\t\t<td id="password">${password}</td>\n` +
-                    `\t\t\t\t\t\t\t<td id='hash'>${sha256(password)}</td>\n` +
+                    `\t\t\t\t\t\t\t<td id='hash'>${hash}</td>\n` +
                     "\t\t\t\t\t\t</tr>\n" 
                     
           })
@@ -45,6 +47,10 @@ fileButton.onclick = function(){
      fileInput.click();
 }
 
+document.querySelector('#crack-password-btn').click = function(){
+     let textInput = document.querySelector('#hash-input').value;
+     
+}
 
 let currentFileInput = '';
 
