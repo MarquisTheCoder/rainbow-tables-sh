@@ -22,20 +22,22 @@ fileInput.addEventListener('change', (event)=>{
      const fileList = event.target.files;
      
      let fr = new FileReader();
-     
+     function resolveHash(password){
+          return new Promise(resolve => sha256(password))
+     }
      fr.onload = function(){
+          
           let passwordList = fr.result;
+     
           passwordList = passwordList.split('\n');
-          passwordList.forEach(password => {
-               let hash = sha256(password);
-               hashTable[password] = hash;
-               tbody.innerHTML += 
-                    "\t\t\t\t\t\t<tr class=\"tbody-row\">\n" +
-                    `\t\t\t\t\t\t\t<td id="password">${password}</td>\n` +
-                    `\t\t\t\t\t\t\t<td id='hash'>${hash}</td>\n` +
-                    "\t\t\t\t\t\t</tr>\n" 
+          async function load(){
+               passwordList.forEach(password => {
+                    let hash = await resolveHash(password);
                     
-          })
+          
+               }) 
+          }
+          
           
           
      }
@@ -52,7 +54,7 @@ document.querySelector('#crack-password-btn').onclick = function(){
      console.log(textInput)
      Object.entries(hashTable).forEach( hashMap => {
           if(textInput == hashMap[1])
-               alert(`Cracked password is: ${hashMap[0]}`)
+               alert(`Cracked password is: "${hashMap[0]}"`)
      })
 }
 
