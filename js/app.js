@@ -20,9 +20,7 @@ let tbody = document.querySelector('.main-tbody')
 
 fileInput.addEventListener('change', (event)=>{
      const fileList = event.target.files;
-     
      let fr = new FileReader();
-     
      fr.onload = function(){
           let passwordList = fr.result;
           passwordList = passwordList.split('\n');
@@ -33,13 +31,9 @@ fileInput.addEventListener('change', (event)=>{
                     "\t\t\t\t\t\t<tr class=\"tbody-row\">\n" +
                     `\t\t\t\t\t\t\t<td id="password">${password}</td>\n` +
                     `\t\t\t\t\t\t\t<td id='hash'>${hash}</td>\n` +
-                    "\t\t\t\t\t\t</tr>\n" 
-                    
+                    "\t\t\t\t\t\t</tr>\n"
           })
-          
-          
      }
-     
      fr.readAsText(fileList[0]);
 })
 
@@ -47,8 +41,16 @@ fileButton.onclick = function(){
      fileInput.click();
 }
 
-document.querySelector('#crack-password-btn').click = function(){
+document.querySelector('#crack-password-btn').onclick = function(){
+     
      let textInput = document.querySelector('#hash-input').value;
+     console.log(textInput)
+     Object.entries(hashTable).forEach( entry => {
+          if(entry[1] === textInput){
+               alert(`password is ${entry[0]}`)
+          }
+          
+     })
      
 }
 
